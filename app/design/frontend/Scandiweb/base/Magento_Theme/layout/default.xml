@@ -9,13 +9,7 @@
             </container>
         </referenceContainer>
 
-        <referenceContainer name="page.wrapper">
-            <container name="page.bottom" htmlTag="div" htmlClass="page-bottom"
-                       before="footer.container">
-                <block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe" as="subscribe" before="-"
-                       template="Magento_Newsletter::subscribe.phtml"/>
-            </container>
-        </referenceContainer>
+        <move element="form.subscribe" destination="page.bottom.container" after="-"/>
 
     </body>
 </page>
